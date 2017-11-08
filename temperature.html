@@ -1,0 +1,30 @@
+<html>
+
+<head>
+<title>Temperature</title>
+<script>
+function temperature(){
+    var C = prompt("Please enter temperature:", "");
+	var F;
+	var txt
+    if (C == null || C == "") 
+	{
+        txt = ("Insert error");
+    } 
+	else 
+	{
+		F = C * (9/5) + 32;
+		txt = ("if Celsius is " + C + "," + "Fahrenheit is " + F);
+    }
+	return txt
+}
+</script>
+</head>
+
+<body>
+<script>
+document.write(temperature());
+</script>
+</body>
+
+</html>
