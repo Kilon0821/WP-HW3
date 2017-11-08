@@ -3,9 +3,11 @@
 <head>
 <title>Temperature</title>
 <script>
-function temperature(){
-    var C = prompt("Please enter temperature:", "");
-	var F;
+var C,F;
+
+function temperature()
+{
+    C = prompt("Please enter temperature:", "");
 	var txt
     if (C == null || C == "") 
 	{
@@ -13,10 +15,15 @@ function temperature(){
     } 
 	else 
 	{
-		F = C * (9/5) + 32;
+		F = CelsiusToFahrenheit();
 		txt = ("if Celsius is " + C + "," + "Fahrenheit is " + F);
     }
 	return txt
+}
+
+function CelsiusToFahrenheit()
+{
+	return C * (9/5) + 32;
 }
 </script>
 </head>
